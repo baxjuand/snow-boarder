@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float torqueAmount = 1f;
+    [SerializeField] float boostAmount = 1f;
     Rigidbody2D rigBod2d;
 
     void Start()
@@ -24,5 +25,10 @@ public class PlayerController : MonoBehaviour
         {
             rigBod2d.AddTorque(-torqueAmount);
         }
+
+       // if (Input.GetKey(KeyCode.Space))
+       // {
+           
+       // }
     }
 }
